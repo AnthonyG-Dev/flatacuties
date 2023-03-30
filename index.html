@@ -4,27 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FANCY CATS</title>
+  <title>FLATACUTIES</title>
  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!--This is the header section of the page-->
-  <header>
-    <h1>Flatacuties</h1>
-  </header>
-  <div>
-    <!--This is the form section of the page-->
-    <form action="display-animal-form">
-      <!--This is where to input the name-->
-       <label for="Name">Name</label>
-      <input type="text" id="name" placeholder="Name">
-      <br>
-      <!--This is the where to input the URL link-->
-       <label for="URL link">Input URl link</label>
-      <input type="text" id="url number" placeholder="Input URL link">
-      </form>
-  </div>
-
- <script src="index.js"></script>
+<!-- This is the header section of the web page. -->
+    <header id="menu">
+        <!-- This is the title of the web page. -->
+        <h1>FLATACUTIES</h1>
+    </header>
+    <!-- This is the main content area of the web page. -->
+    <div class="container">
+        <!-- This is the form section of the web page. -->
+        <form id="animal-form">
+            <!-- This is the label for the animal name input field. -->
+            <label for="name">NAME</label>
+            <!-- This is the input field for the animal name. -->
+            <input type="text" id="name" name="name" class="input">
+            <!-- This is the label for the animal image input field. -->
+            <label for="imgurl">IMG URL</label>
+            <!-- This is the input field for the animal image URL. -->
+            <input type="text" id="image" name="imgurl" class="input">
+            <!-- This is the button to submit the animal information. -->
+            <button>Add animal</button>
+        </form>
+    <ul id="animal-list" class="cutest">
+    </ul>
+</div>
+<script src="./index.js"></script>
 </body>
+</html>
 </html>
