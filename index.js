@@ -33,7 +33,7 @@ function displayAnimalsData(animals) {
       voteCount.textContent = `${animal.votes} Votes`;
       fetch(`http://localhost:3000/characters/${animal.id}`,{
     // Send a PUT request to the local server with updated animal data
-        method: 'PUT',
+        method: 'PUT', <!-- This is the main content area of the web page. -->
         headers:{
           'Content-Type': 'application/json'
         },
